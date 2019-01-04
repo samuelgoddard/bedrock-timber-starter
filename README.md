@@ -1,4 +1,4 @@
-# Bedrock Timber Starter
+# Bedrock + Nanobox + Timber Starter
 
 The project uses/requires the following:
 
