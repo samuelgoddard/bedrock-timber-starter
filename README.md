@@ -1,4 +1,4 @@
-# Bedrock + Nanobox + Timber Starter
+# Bedrock + Nanobox + Timber WordPress Starter
 
 The project uses/requires the following:
 
