@@ -1,0 +1,33 @@
+run.config:
+  engine: php
+  engine.config:
+    runtime: php-7.1
+    document_root: web
+    index_list:
+      - index.php
+      - index.html
+      - index.htm
+    extensions:
+      - gd
+      - mysqli
+      - curl
+      - zlib
+      - ctype
+      - simplexml
+      - tokenizer
+      - xmlwriter
+      - zip
+
+web.wp:
+  start:
+    php: start-php
+    apache: start-apache
+  network_dirs:
+    data.storage:
+      - app/uploads/
+
+data.db:
+  image: nanobox/mysql
+
+data.storage:
+  image: nanobox/unfs
