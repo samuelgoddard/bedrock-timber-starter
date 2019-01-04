@@ -17,7 +17,7 @@ The project uses/requires the following:
 
 1. Clone the repo:
 ```bash
-git clone git@github.com:madebykind/shu-wordpress.git
+git clone git@github.com:samuelgoddard/bedrock-timber-starter.git
 ```
 
 2. Install the Nanobox CLI tool. You will need a (free) [account](https://dashboard.nanobox.io/users/register).
@@ -29,7 +29,7 @@ git flow init
 
 4. Add local DNS alias
 ```bash
-nanobox dns add local shu.wordpress.localdev
+nanobox dns add local bedrock.wordpress.localdev
 ```
 
 5. Start the server, first time installation will run `composer install`:
@@ -45,8 +45,8 @@ nanobox run php-server
 <b>DB_PASSWORD</b> - Database password
 <b>DB_HOST</b> - Database host
 <b>WP_ENV</b> - Set to environment (<em>development</em>, <em>staging</em>, <em>production</em>)
-<b>WP_HOME</b> - Full URL to WordPress home (<em>http://shu.wordpress.localdev</em>)
-<b>WP_SITEURL</b> - Full URL to WordPress including subdirectory (<em>http://shu.wordpress.localdev/wp</em>)
+<b>WP_HOME</b> - Full URL to WordPress home (<em>http://bedrock.wordpress.localdev</em>)
+<b>WP_SITEURL</b> - Full URL to WordPress including subdirectory (<em>http://bedrock.wordpress.localdev/wp</em>)
 <b>AUTH_KEY</b>, <b>SECURE_AUTH_KEY</b>, <b>LOGGED_IN_KEY</b>, <b>NONCE_KEY</b>, <b>AUTH_SALT</b>, <b>SECURE_AUTH_SALT</b>, <b>LOGGED_IN_SALT</b>, <b>NONCE_SALT</b>
 </pre>
 
@@ -54,11 +54,11 @@ You can cut and paste salts from the [Roots WordPress Salt Generator](https://ro
 
 7. Set your site vhost document root to `web/` (`/path/to/site/current/web/` if using deploys). This is done out of the box locally within the `boxfile.yml`
 
-8. Access WP admin at `http://shu.wordpress.localdev/wp/wp-admin` and follow the instructions to install. Or grab the current database from XXX (add database storage details)
+8. Access WP admin at `http://bedrock.wordpress.localdev/wp/wp-admin` and follow the instructions to install. Or grab the current database from XXX (add database storage details)
 
-9. Activate the 'SHU WordPress' theme in `Appearance > Themes`
+9. Activate the 'Bedrock Timber Starter' theme in `Appearance > Themes`
 
-10. Theme files are stored in a different location to normal by Bedrock - `web/app/themes/shu`
+10. Theme files are stored in a different location to normal by Bedrock - `web/app/themes/starter`
 
 ## Plugin Management
 Plugin management is done via composer and [WordPress Packagist](https://wpackagist.org/). We install the [Timber Library](https://wordpress.org/plugins/timber-library/) and [ACF](https://en-gb.wordpress.org/plugins/advanced-custom-fields/) plugins by default, these are set as 'mu-plugins', essentially plugins that users have no control of disabling / enabling in the backend. Config can be found in the `composer.json` file.
